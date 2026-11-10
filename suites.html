@@ -1,0 +1,1006 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suites &amp; Accommodations — Gonio Batumi Hotel</title>
+    <meta
+      name="description"
+      content="Explore all suites and residences at Gonio Batumi — from Deluxe Sea View Suites to the Penthouse Maritime Grand Suite on Georgia's Black Sea Riviera."
+    />
+    <link rel="icon" href="public/images/ICON.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@400;500&family=Noto+Sans+Georgian:wght@300;400;500;600&family=Noto+Serif+Georgian:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="suites">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ====================== HEADER ====================== -->
+    <header class="site-header">
+      <div class="container inner">
+        <a href="index.html" class="site-logo">
+          <span class="site-logo-emblem"
+            ><img src="public/images/ICON.png" width="40" height="40" alt=""
+          /></span>
+          <span class="site-logo-text">
+            <span class="site-logo-name">GONIO</span>
+            <span class="site-logo-sub" data-i18n="logo_sub"
+              >Batumi Hotel &amp; Residences</span
+            >
+          </span>
+        </a>
+
+        <nav class="site-nav" id="mainNav" aria-label="Main">
+          <a href="index.html" data-page="home">Home</a>
+          <a
+            href="suites.html"
+            data-page="suites"
+            class="active"
+            aria-current="page"
+            >Suites</a
+          >
+          <a href="index.html#why-choose-hotel" data-page="about">About</a>
+          <a href="index.html#facilities" data-page="facilities">Facilities</a>
+          <a href="index.html#gallery" data-page="gallery">Gallery</a>
+          <a href="index.html#location" data-page="location">Location</a>
+          <a href="index.html#contact" data-page="contact">Contact</a>
+                    <div class="nav-extra">
+            <div class="lang-switcher">
+              <button data-lang="en">EN</button><span class="sep">/</span>
+              <button data-lang="ka">KA</button><span class="sep">/</span>
+              <button data-lang="ru">RU</button>
+            </div>
+            <button class="btn btn-primary" onclick="openBookingModal('')">
+              <span data-i18n="nav_book_now">Book Now</span>
+            </button>
+          </div>
+        </nav>
+        </nav>
+
+        <div class="header-actions">
+          <div class="lang-switcher" role="group" aria-label="Language">
+            <button type="button" data-lang="en">EN</button
+            ><span class="sep">/</span>
+            <button type="button" data-lang="ka">KA</button
+            ><span class="sep">/</span>
+            <button type="button" data-lang="ru">RU</button>
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary btn-sm"
+            onclick="openBookingModal('')"
+          >
+            <span data-i18n="nav_book_now">Book Now</span>
+          </button>
+          <button
+            type="button"
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="mainNav"
+            aria-label="Toggle navigation"
+          >
+            <span class="material-symbols-outlined" aria-hidden="true"
+              >menu</span
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ====================== PAGE HERO ====================== -->
+      <!-- Optional hero photo: add style="--page-hero-img:url(public/images/your-photo.webp)" to the section below -->
+      <section class="page-hero">
+        <div class="container">
+          <div class="accent-line accent-line--start">
+            <span class="accent-label">Gonio Living Collection</span>
+          </div>
+          <h1 class="h1">
+            <span data-i18n="sp_h1">Suites &amp; Accommodations</span>
+          </h1>
+          <p class="subhead page-hero__tagline">
+            Sanctuaries of Light &amp; Tactile Comfort.
+          </p>
+          <p class="page-hero__lead">
+            Framed by floor-to-ceiling glass, natural travertine masonry, and
+            bleached oak millwork, every residence provides an uninterrupted
+            sensory dialogue with the Black Sea horizon.
+          </p>
+          <ul class="page-hero__points">
+            <li>
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >waves</span
+              >Unobstructed Horizons
+            </li>
+            <li>
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >balcony</span
+              >Private Terraces
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ====================== FILTER BAR ====================== -->
+      <section class="filter-section" aria-label="Filter suites">
+        <div class="container filter-section__inner">
+          <div class="filter-bar">
+            <button type="button" class="filter-btn active" data-filter="all">
+              <span data-i18n="filter_all">All Suites (4)</span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="sea-view">
+              <span data-i18n="filter_sea">Sea Panorama</span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="residence">
+              <span data-i18n="filter_res">Residences</span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="garden">
+              <span data-i18n="filter_garden">Garden &amp; Studios</span>
+            </button>
+          </div>
+          <span class="micro text-taupe"
+            ><span data-i18n="filter_cta"
+              >Discreet Inquiries &amp; Custom Configurations</span
+            ></span
+          >
+        </div>
+      </section>
+
+      <!-- ====================== SUITES CATALOG ====================== -->
+      <section class="section">
+        <div class="container suite-list">
+          <!-- Suite 1: Deluxe Sea View Suite -->
+          <article
+            class="suite-card suite-card--feature"
+            id="deluxe"
+            data-category="sea-view"
+          >
+            <div class="suite-card-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=80"
+                width="900"
+                height="600"
+                alt="Deluxe Sea View Suite"
+              />
+              <span class="suite-badge">Signature Suite</span>
+            </div>
+            <div class="suite-card-body">
+              <div class="suite-meta">
+                <span>48 m²</span><span>King Bed</span
+                ><span>Black Sea Panorama</span>
+              </div>
+              <h2 class="suite-name">
+                <span data-i18n="suite_deluxe">Deluxe Sea View Suite</span>
+              </h2>
+              <p class="suite-desc">
+                Floor-to-ceiling glass doors that open directly to the ocean
+                breeze. Fitted with natural oak cabinetry, hand-woven linen
+                draping, and an expansive sunset lounge that blurs the boundary
+                between interior comfort and coastal air.
+              </p>
+              <div class="suite-amenities">
+                <div class="amenities-grid">
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >wifi</span
+                    >
+                    High-speed Fibre
+                  </div>
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >shower</span
+                    >
+                    Marble Rainfall Shower
+                  </div>
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >local_bar</span
+                    >
+                    In-room Minibar
+                  </div>
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >balcony</span
+                    >
+                    Sea-view Terrace
+                  </div>
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >room_service</span
+                    >
+                    24/7 Concierge
+                  </div>
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >dry_cleaning</span
+                    >
+                    Linen Robes &amp; Slippers
+                  </div>
+                </div>
+              </div>
+              <div class="suite-price">
+                <span class="from">From</span><span class="amount">€ 310</span
+                ><span class="night">per night</span>
+              </div>
+              <div class="suite-actions">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="openBookingModal('Deluxe Sea View Suite')"
+                >
+                  <span data-i18n="btn_book_room">Book This Room</span>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline"
+                  onclick="
+                    openSuiteDetails(
+                      'Deluxe Sea View Suite',
+                      '48 m²',
+                      'King Size Bed &amp; Balcony',
+                      'High-speed Fibre, Marble Rainfall Shower, In-room Minibar, Sea-view Terrace, 24/7 Concierge, Linen Robes',
+                    )
+                  "
+                >
+                  <span data-i18n="btn_details">Details</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Suite 2: Panoramic Executive Haven -->
+          <article
+            class="suite-card suite-card--feature suite-card--reverse"
+            id="executive"
+            data-category="sea-view"
+          >
+            <div class="suite-card-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=900&q=80"
+                width="900"
+                height="600"
+                loading="lazy"
+                alt="Panoramic Executive Haven"
+              />
+              <span class="suite-badge">Executive</span>
+            </div>
+            <div class="suite-card-body">
+              <div class="suite-meta">
+                <span>72 m²</span><span>King Bed</span
+                ><span>Panoramic Views</span>
+              </div>
+              <h2 class="suite-name">
+                <span data-i18n="suite_exec">Panoramic Executive Haven</span>
+              </h2>
+              <p class="suite-desc">
+                A generous dual-aspect living area with wrap-around views,
+                hand-woven Georgian textile accents, a dedicated work alcove
+                finished in pale travertine, and a private plunge terrace
+                suspended above the sea.
+              </p>
+              <div class="suite-amenities">
+                <div class="amenities-grid">
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >panorama</span
+                    >
+                    Wrap-around Glazing
+                  </div>
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >coffee</span
+                    >
+                    Nespresso Machine
+                  </div>
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >person</span
+                    >
+                    Butler Service
+                  </div>
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >bathtub</span
+                    >
+                    Deep-soak Tub
+                  </div>
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >luggage</span
+                    >
+                    Walk-in Wardrobe
+                  </div>
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >balcony</span
+                    >
+                    Private Plunge Terrace
+                  </div>
+                </div>
+              </div>
+              <div class="suite-price">
+                <span class="from">From</span><span class="amount">€ 490</span
+                ><span class="night">per night</span>
+              </div>
+              <div class="suite-actions">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="openBookingModal('Panoramic Executive Haven')"
+                >
+                  <span data-i18n="btn_book_room">Book This Room</span>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline"
+                  onclick="
+                    openSuiteDetails(
+                      'Panoramic Executive Haven',
+                      '72 m²',
+                      'King Bed &amp; Plunge Terrace',
+                      'Panoramic Glazing, Nespresso Machine, Butler Service, Deep-soak Tub, Walk-in Wardrobe, Private Plunge Terrace',
+                    )
+                  "
+                >
+                  <span data-i18n="btn_details">Details</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Suite 3: Garden Terrace Residence -->
+          <article
+            class="suite-card suite-card--feature"
+            id="garden"
+            data-category="garden"
+          >
+            <div class="suite-card-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=900&q=80"
+                width="900"
+                height="600"
+                loading="lazy"
+                alt="Garden Terrace Residence"
+              />
+              <span class="suite-badge">Garden</span>
+            </div>
+            <div class="suite-card-body">
+              <div class="suite-meta">
+                <span>58 m²</span><span>King Bed</span
+                ><span>Garden Access</span>
+              </div>
+              <h2 class="suite-name">
+                <span data-i18n="suite_garden">Garden Terrace Residence</span>
+              </h2>
+              <p class="suite-desc">
+                Set amid subtropical gardens with a private stone terrace,
+                outdoor daybed, and direct garden access. Serene and utterly
+                secluded — ideal for those who seek restorative privacy
+                alongside nature.
+              </p>
+              <div class="suite-amenities">
+                <div class="amenities-grid">
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >deck</span
+                    >
+                    Private Stone Terrace
+                  </div>
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >chair</span
+                    >
+                    Outdoor Daybed
+                  </div>
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >park</span
+                    >
+                    Botanical Garden Access
+                  </div>
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >shower</span
+                    >
+                    Rainfall Shower
+                  </div>
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >menu_book</span
+                    >
+                    Curated Mini Library
+                  </div>
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >nightlight</span
+                    >
+                    Blackout Curtains
+                  </div>
+                </div>
+              </div>
+              <div class="suite-price">
+                <span class="from">From</span><span class="amount">€ 365</span
+                ><span class="night">per night</span>
+              </div>
+              <div class="suite-actions">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="openBookingModal('Garden Terrace Residence')"
+                >
+                  <span data-i18n="btn_book_room">Book This Room</span>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline"
+                  onclick="
+                    openSuiteDetails(
+                      'Garden Terrace Residence',
+                      '58 m²',
+                      'King Bed &amp; Garden Access',
+                      'Private Stone Terrace, Outdoor Daybed, Botanical Garden Access, Rainfall Shower, Curated Mini Library, Blackout Curtains',
+                    )
+                  "
+                >
+                  <span data-i18n="btn_details">Details</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Suite 4: Penthouse Maritime Grand Suite -->
+          <article
+            class="suite-card suite-card--wide"
+            id="penthouse"
+            data-category="residence"
+          >
+            <div class="suite-card-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=1400&q=80"
+                width="1400"
+                height="600"
+                loading="lazy"
+                alt="Penthouse Maritime Grand Suite"
+              />
+              <span class="suite-badge">Penthouse</span>
+              <div class="suite-card__overlay">
+                <div class="micro">
+                  <span data-i18n="penth_exclusive"
+                    >Most Exclusive Residence</span
+                  >
+                </div>
+                <h2 class="suite-card__title">
+                  <span data-i18n="suite_penthouse"
+                    >Penthouse Maritime Grand Suite</span
+                  >
+                </h2>
+              </div>
+            </div>
+            <div class="suite-card__split">
+              <div class="suite-card-body">
+                <div class="suite-meta">
+                  <span>190 m²</span><span>2 Bedrooms</span
+                  ><span>Full Sea Panorama</span>
+                </div>
+                <p class="suite-desc">
+                  The pinnacle of coastal living. Two bedrooms, a private
+                  rooftop terrace with infinity plunge pool, a formal dining
+                  salon, full kitchen, and a dedicated butler suite. Reserved
+                  for guests who demand absolute discretion and total immersion
+                  in the Black Sea horizon.
+                </p>
+                <div class="suite-price">
+                  <span class="from">From</span
+                  ><span class="amount">€ 1,850</span
+                  ><span class="night">per night</span>
+                </div>
+              </div>
+              <div class="suite-card-body">
+                <div class="amenities-grid">
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >pool</span
+                    >
+                    Rooftop Plunge Pool
+                  </div>
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >kitchen</span
+                    >
+                    Private Chef's Kitchen
+                  </div>
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >dining</span
+                    >
+                    Formal Dining Salon
+                  </div>
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >person</span
+                    >
+                    Dedicated Butler
+                  </div>
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >airport_shuttle</span
+                    >
+                    Private Transfer
+                  </div>
+                  <div class="amenity-item">
+                    <span class="material-symbols-outlined" aria-hidden="true"
+                      >nightlife</span
+                    >
+                    Cellar Wine Selection
+                  </div>
+                </div>
+                <div class="suite-actions">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    onclick="openBookingModal('Penthouse Maritime Grand Suite')"
+                  >
+                    <span data-i18n="btn_reserve_pent">Reserve Penthouse</span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline"
+                    onclick="
+                      openSuiteDetails(
+                        'Penthouse Maritime Grand Suite',
+                        '190 m²',
+                        '2 King Bedrooms',
+                        'Rooftop Plunge Pool, Private Chef Kitchen, Formal Dining Salon, Dedicated Butler, Private Transfer, Cellar Wine Selection',
+                      )
+                    "
+                  >
+                    <span data-i18n="btn_full_det">Full Details</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ====================== INCLUSIONS ====================== -->
+      <section
+        class="section section--dark inclusions-strip"
+        aria-labelledby="inclusionsTitle"
+      >
+        <div class="container">
+          <h2 class="sr-only" id="inclusionsTitle">Included with every stay</h2>
+          <div class="inclusions-grid">
+            <div class="inclusion-item">
+              <span
+                class="material-symbols-outlined inclusion-icon"
+                aria-hidden="true"
+                >breakfast_dining</span
+              >
+              <div class="inclusion-title">
+                <span data-i18n="inc_breakfast">Daily Breakfast</span>
+              </div>
+              <p class="inclusion-desc">
+                <span data-i18n="inc_breakfast_d"
+                  >Artisanal Georgian breakfast included with every suite.</span
+                >
+              </p>
+            </div>
+            <div class="inclusion-item">
+              <span
+                class="material-symbols-outlined inclusion-icon"
+                aria-hidden="true"
+                >directions_car</span
+              >
+              <div class="inclusion-title">
+                <span data-i18n="inc_transfer">Airport Transfer</span>
+              </div>
+              <p class="inclusion-desc">
+                <span data-i18n="inc_transfer_d"
+                  >Complimentary transfer from Batumi International
+                  Airport.</span
+                >
+              </p>
+            </div>
+            <div class="inclusion-item">
+              <span
+                class="material-symbols-outlined inclusion-icon"
+                aria-hidden="true"
+                >beach_access</span
+              >
+              <div class="inclusion-title">
+                <span data-i18n="inc_beach">Beach Access</span>
+              </div>
+              <p class="inclusion-desc">
+                <span data-i18n="inc_beach_d"
+                  >Exclusive 100m private beach strip with sun loungers.</span
+                >
+              </p>
+            </div>
+            <div class="inclusion-item">
+              <span
+                class="material-symbols-outlined inclusion-icon"
+                aria-hidden="true"
+                >concierge</span
+              >
+              <div class="inclusion-title">
+                <span data-i18n="inc_concierge">24/7 Concierge</span>
+              </div>
+              <p class="inclusion-desc">
+                <span data-i18n="inc_concierge_d"
+                  >Personal concierge for every guest, day and night.</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================== FOOTER ====================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand-name">GONIO</div>
+            <div class="footer-brand-sub">BATUMI HOTEL &amp; RESIDENCES</div>
+            <p class="footer-about">
+              An architectural haven perched along the Black Sea coastline.
+              Discreet luxury in Batumi, Georgia.
+            </p>
+            <!-- TODO: replace # with the real social profile URLs -->
+            <div class="footer-social">
+              <a href="#">Instagram</a><a href="#">Facebook</a
+              ><a href="#">LinkedIn</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-section-label">
+              <span data-i18n="footer_nav">Navigation</span>
+            </div>
+            <ul class="footer-nav">
+              <li><a href="index.html">Homepage</a></li>
+              <li><a href="suites.html">All Suites</a></li>
+              <li>
+                <a href="index.html#facilities">Wellness &amp; Facilities</a>
+              </li>
+              <li><a href="index.html#gallery">Gallery</a></li>
+              <li><a href="index.html#location">Location</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-section-label">
+              <span data-i18n="footer_contact">Concierge &amp; Inquiries</span>
+            </div>
+            <div class="footer-contact-row">
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >location_on</span
+              ><span>Gonio Seaside Promenade, Batumi, Georgia</span>
+            </div>
+            <div class="footer-contact-row">
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >call</span
+              ><a href="tel:+995422220000">+995 422 22 00 00</a>
+            </div>
+            <div class="footer-contact-row">
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >mail</span
+              ><a href="mailto:reservations@fcgoniohotel.ge"
+                >reservations@fcgoniohotel.ge</a
+              >
+            </div>
+            <button
+              type="button"
+              class="btn btn-outline btn-sm footer-btn"
+              onclick="openBookingModal('')"
+            >
+              <span data-i18n="cta_reserve">Make a Reservation</span>
+            </button>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            © 2025 GONIO Batumi Hotel &amp; Residences. All rights reserved.
+          </p>
+          <div class="footer-legal">
+            <a href="#"
+              ><span data-i18n="footer_privacy">Privacy Policy</span></a
+            >
+            <a href="#"><span data-i18n="footer_terms">Terms of Stay</span></a>
+            <a href="#"><span data-i18n="footer_imprint">Imprint</span></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ====================== FAB ====================== -->
+    <div class="fab">
+      <!-- TODO: replace 995555000000 with the real WhatsApp number (digits only, with country code) -->
+      <a
+        href="https://wa.me/995555000000"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-primary"
+      >
+        <span class="material-symbols-outlined btn-icon" aria-hidden="true"
+          >chat</span
+        >
+        Concierge
+      </a>
+    </div>
+
+    <!-- ====================== BOOKING MODAL ====================== -->
+    <div
+      class="modal-overlay"
+      id="bookingModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="bookingModalTitle"
+      style="display: none"
+    >
+      <div class="modal-box">
+        <button
+          type="button"
+          class="modal-close"
+          onclick="closeBookingModal()"
+          aria-label="Close"
+        >
+          <span class="material-symbols-outlined" aria-hidden="true"
+            >close</span
+          >
+        </button>
+        <div class="modal-head">
+          <div class="micro text-gold">GONIO Reservation</div>
+          <h2 class="h2" id="bookingModalTitle">
+            <span data-i18n="modal_title">Request Your Stay</span>
+          </h2>
+          <p class="modal-lead">
+            Our reservation administrator will review availability and contact
+            you personally to finalize your booking.
+          </p>
+        </div>
+
+        <form id="reservationForm" onsubmit="submitReservationForm(event)">
+          <div class="grid-2 form-row">
+            <div class="form-group">
+              <label class="form-label" for="res-name">Guest Full Name *</label>
+              <input
+                class="form-input"
+                id="res-name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                placeholder="Alexander Smith"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="res-phone">Contact Phone *</label>
+              <input
+                class="form-input"
+                id="res-phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+                placeholder="+995 555 000 000"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group form-row">
+            <label class="form-label" for="res-email">Email Address *</label>
+            <input
+              class="form-input"
+              id="res-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="guest@domain.com"
+              required
+            />
+          </div>
+
+          <div class="grid-2 form-row">
+            <div class="form-group">
+              <label class="form-label" for="res-checkin"
+                >Check-In Date *</label
+              >
+              <input
+                class="form-input"
+                id="res-checkin"
+                name="checkin"
+                type="date"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="res-checkout"
+                >Check-Out Date *</label
+              >
+              <input
+                class="form-input"
+                id="res-checkout"
+                name="checkout"
+                type="date"
+                autocomplete="off"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row-3 form-row">
+            <div class="form-group">
+              <label class="form-label" for="res-adults">Adults *</label>
+              <select class="form-select" id="res-adults" name="adults">
+                <option value="1">1 Adult</option>
+                <option value="2" selected>2 Adults</option>
+                <option value="3">3 Adults</option>
+                <option value="4">4 Adults</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="res-children"
+                ><span data-i18n="field_children">Children</span></label
+              >
+              <select class="form-select" id="res-children" name="children">
+                <option value="0" selected>0 Children</option>
+                <option value="1">1 Child</option>
+                <option value="2">2 Children</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="res-roomtype"
+                >Suite Category *</label
+              >
+              <select
+                class="form-select"
+                id="res-roomtype"
+                name="suite"
+                required
+              >
+                <option value="">Select a suite…</option>
+                <option value="Deluxe Sea View Suite">Deluxe Sea View</option>
+                <option value="Panoramic Executive Haven">
+                  Executive Haven
+                </option>
+                <option value="Garden Terrace Residence">
+                  Garden Residence
+                </option>
+                <option value="Penthouse Maritime Grand Suite">
+                  Penthouse Maritime
+                </option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group form-row form-row--last">
+            <label class="form-label" for="res-notes"
+              ><span data-i18n="field_notes"
+                >Special Inquiries or Arrival Notes</span
+              ></label
+            >
+            <textarea
+              class="form-textarea"
+              id="res-notes"
+              name="notes"
+              rows="3"
+              placeholder="Airport transfer, dietary requests, floor preference..."
+            ></textarea>
+          </div>
+
+          <div class="form-error" id="formErrorMessage" role="alert"></div>
+          <button class="btn btn-primary btn-block" type="submit">
+            Submit Reservation Request
+            <span class="material-symbols-outlined btn-icon" aria-hidden="true"
+              >send</span
+            >
+          </button>
+        </form>
+
+        <div class="spinner" id="reservationLoading">
+          <div class="spinner-ring"></div>
+          <span class="micro text-taupe"
+            ><span data-i18n="loading_msg"
+              >Submitting to Concierge Desk…</span
+            ></span
+          >
+        </div>
+
+        <div class="form-success" id="reservationSuccess" role="status">
+          <div class="success-icon">
+            <span class="material-symbols-outlined" aria-hidden="true"
+              >done_all</span
+            >
+          </div>
+          <div class="micro text-gold">
+            <span data-i18n="success_badge">Inquiry Received</span>
+          </div>
+          <h3 class="h3">
+            <span data-i18n="success_title">Your request is with our team</span>
+          </h3>
+          <p class="modal-lead">
+            Our concierge will reach out within 2 hours to confirm availability
+            and finalize the details of your stay.
+          </p>
+          <button
+            type="button"
+            class="btn btn-outline btn-sm"
+            onclick="closeBookingModal()"
+          >
+            <span data-i18n="btn_close">Close</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================== SUITE DETAILS MODAL ====================== -->
+    <div
+      class="modal-overlay"
+      id="suiteDetailsModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalSuiteTitle"
+      style="display: none"
+    >
+      <div class="modal-box modal-box--sm">
+        <button
+          type="button"
+          class="modal-close"
+          onclick="closeSuiteDetails()"
+          aria-label="Close"
+        >
+          <span class="material-symbols-outlined" aria-hidden="true"
+            >close</span
+          >
+        </button>
+        <div class="micro text-gold">
+          <span data-i18n="det_badge">Suite Specification</span>
+        </div>
+        <h2 class="h2 modal-suite-title" id="modalSuiteTitle"></h2>
+        <div class="spec-grid">
+          <div class="spec-item">
+            <div class="spec-label">
+              <span data-i18n="det_area_label">Floor Plan</span>
+            </div>
+            <div class="spec-value" id="modalSuiteArea"></div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">
+              <span data-i18n="det_bed_label">Bedding</span>
+            </div>
+            <div class="spec-value" id="modalSuiteBed"></div>
+          </div>
+        </div>
+        <div class="micro text-taupe modal-subhead">
+          <span data-i18n="det_amenities">Included Amenities</span>
+        </div>
+        <div
+          class="amenities-grid modal-amenities"
+          id="modalSuiteAmenities"
+        ></div>
+        <button
+          type="button"
+          class="btn btn-primary btn-block"
+          onclick="proceedFromDetails()"
+        >
+          Proceed to Reservation
+        </button>
+      </div>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

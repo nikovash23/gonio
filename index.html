@@ -1,0 +1,1312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gonio Batumi Hotel</title>
+    <meta
+      name="description"
+      content="Discover Gonio Batumi — a luxury boutique hotel on Georgia's Black Sea Riviera. Curated suites, bespoke concierge, and timeless coastal elegance in Gonio, Adjara."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&family=Cinzel:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@29.5.0/dist/css/intlTelInput.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <!-- ====================== HEADER ====================== -->
+    <header class="site-header">
+      <div class="container inner">
+        <a href="index.html" class="site-logo">
+          <div
+            class="site-logo-emblem"
+            style="background: none; border: none; padding: 0"
+          >
+            <img
+              src="public/images/ICON.png"
+              style="width: 40px; height: 40px; object-fit: contain"
+              alt="Gonio"
+            />
+          </div>
+          <div class="site-logo-text">
+            <span class="site-logo-name" data-i18n="logo_name"
+              >GONIO BATUMI HOTEL</span
+            >
+          </div>
+        </a>
+
+        <nav class="site-nav" id="mainNav">
+          <a href="index.html" data-page="home" data-i18n="nav_home">Home</a>
+          <a href="suites.html" data-page="suites" data-i18n="nav_suites"
+            >Suites</a
+          >
+          <a href="#why-choose-hotel" data-page="about" data-i18n="nav_about"
+            >About</a
+          >
+          <a
+            href="#facilities"
+            data-page="facilities"
+            data-i18n="nav_facilities"
+            >Facilities</a
+          >
+          <a href="#gallery" data-page="gallery" data-i18n="nav_gallery"
+            >Gallery</a
+          >
+          <a href="#location" data-page="location" data-i18n="nav_location"
+            >Location</a
+          >
+          <a href="#contact" data-page="contact" data-i18n="nav_contact"
+            >Contact</a
+          >
+                    <div class="nav-extra">
+            <div class="lang-switcher">
+              <button data-lang="en">EN</button><span class="sep">/</span>
+              <button data-lang="ka">KA</button><span class="sep">/</span>
+              <button data-lang="ru">RU</button>
+            </div>
+            <button class="btn btn-primary" onclick="openBookingModal('')">
+              <span data-i18n="nav_book_now">Book Now</span>
+            </button>
+          </div>
+        </nav>
+        </nav>
+
+        <div class="header-actions">
+          <div class="lang-switcher">
+            <button data-lang="en">EN</button><span class="sep">/</span>
+            <button data-lang="ka">KA</button><span class="sep">/</span>
+            <button data-lang="ru">RU</button>
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="openBookingModal('')">
+            <span data-i18n="nav_book_now">Book Now</span>
+          </button>
+          <button
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ====================== HERO ====================== -->
+    <section class="hero">
+      <div
+        class="hero-bg"
+        style="
+          background-image: url(&quot;public/images/hotel-exterior-1.jpg&quot;);
+        "
+      ></div>
+      <div class="hero-scrim"></div>
+
+      <!-- Center copy -->
+      <div class="hero-content">
+        <p
+          class="micro h-anim-2"
+          style="
+            color: var(--color-gold);
+            letter-spacing: 0.3em;
+            margin-bottom: 1.25rem;
+          "
+          data-i18n="hero_eyebrow"
+        >
+          A Sanctuary on the Black Sea Coast
+        </p>
+        <h1 class="hero-title h-anim-3">
+          <span data-i18n="hero_title_1">GONIO</span>
+          <span data-i18n="hero_title_2">BATUMI</span>
+        </h1>
+        <p class="hero-sub h-anim-4" data-i18n="hero_sub">
+          Subtle elegance, coastal tranquility, and curated Georgian hospitality
+          nestled where subtropical emerald hills meet the calm sea.
+        </p>
+        <div class="hero-ctas h-anim-4">
+          <button
+            class="btn btn-gold btn-lg"
+            onclick="openBookingModal('Deluxe Sea View Suite')"
+          >
+            <span data-i18n="hero_cta_book">Reserve Your Stay</span>
+          </button>
+          <a href="#why-choose-hotel" class="btn btn-ghost">
+            <span data-i18n="hero_cta_disc">Discover the Property</span>
+            <span class="material-symbols-outlined" style="font-size: 0.9rem"
+              >arrow_downward</span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== INTRODUCTION ====================== -->
+    <hr class="divider" />
+
+    <section class="hgb-why-section" id="why-choose-hotel">
+      <div class="hgb-why-container">
+        <!-- LEFT CONTENT -->
+        <div class="hgb-why-content">
+          <div class="hgb-eyebrow">
+            <span class="hgb-eyebrow-line"></span>
+            <span data-i18n="why_eyebrow">THE HOTEL EXPERIENCE</span>
+          </div>
+
+          <h2 class="hgb-why-heading">
+            <span data-i18n="why_heading_main">Why Choose</span> <br />
+            <span data-i18n="why_heading_span">Gonio Batumi Hotel?</span>
+          </h2>
+
+          <p class="hgb-why-description" data-i18n="why_desc">
+            Discover a welcoming place to stay, where comfort, a remarkable
+            location and the warmth of Georgian hospitality come together.
+            Experience a stay designed around the things that matter most.
+          </p>
+
+          <div class="hgb-features-grid">
+            <article class="hgb-feature">
+              <div class="hgb-feature-top">
+                <span class="hgb-feature-number">01</span>
+                <span class="hgb-feature-icon">⌖</span>
+              </div>
+              <h3>
+                <span data-i18n="why_f1_title">An Exceptional Location</span>
+              </h3>
+              <p data-i18n="why_f1_desc">
+                Discover the beauty of Gonio and enjoy the atmosphere of
+                Georgia's Black Sea coast.
+              </p>
+            </article>
+
+            <article class="hgb-feature">
+              <div class="hgb-feature-top">
+                <span class="hgb-feature-number">02</span>
+                <span class="hgb-feature-icon">◇</span>
+              </div>
+              <h3>
+                <span data-i18n="why_f2_title">Comfort in Every Detail</span>
+              </h3>
+              <p data-i18n="why_f2_desc">
+                Thoughtfully designed accommodation focused on making every stay
+                comfortable.
+              </p>
+            </article>
+
+            <article class="hgb-feature">
+              <div class="hgb-feature-top">
+                <span class="hgb-feature-number">03</span>
+                <span class="hgb-feature-icon">✳</span>
+              </div>
+              <h3>
+                <span data-i18n="why_f3_title">Georgian Hospitality</span>
+              </h3>
+              <p data-i18n="why_f3_desc">
+                A warm welcome inspired by Georgia's long-standing tradition of
+                hospitality.
+              </p>
+            </article>
+
+            <article class="hgb-feature">
+              <div class="hgb-feature-top">
+                <span class="hgb-feature-number">04</span>
+                <span class="hgb-feature-icon">✧</span>
+              </div>
+              <h3><span data-i18n="why_f4_title">Thoughtful Service</span></h3>
+              <p data-i18n="why_f4_desc">
+                Attentive care and a welcoming atmosphere throughout your stay.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="hgb-why-visual">
+          <div class="hgb-image-wrapper">
+            <img
+              src="public/images/hotel-exterior.jpg"
+              alt="Gonio Batumi Hotel"
+              class="hgb-hotel-image"
+              loading="lazy"
+            />
+            <div class="hgb-image-overlay"></div>
+          </div>
+
+          <div class="hgb-floating-label">
+            <span class="hgb-floating-symbol">✳</span>
+            <div>
+              <span class="hgb-floating-title">Gonio Batumi Hotel</span>
+              <span class="hgb-floating-subtitle" data-i18n="why_subtitle"
+                >A PLACE TO FEEL AT HOME</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== FEATURED SUITES ====================== -->
+    <section
+      class="section reveal"
+      id="suites"
+      style="background: rgba(23, 23, 23, 0.02)"
+    >
+      <div class="container">
+        <div
+          style="
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+            gap: 2rem;
+            flex-wrap: wrap;
+          "
+        >
+          <div>
+            <div class="accent-line">
+              <span class="accent-label" data-i18n="suites_accent"
+                >Accommodations</span
+              >
+            </div>
+            <h2 class="h1" data-i18n="suites_h1">
+              Spaces Crafted for Stillness
+            </h2>
+          </div>
+          <p
+            style="
+              font-size: var(--text-sm);
+              color: var(--color-taupe);
+              max-width: 380px;
+              line-height: 1.65;
+            "
+            data-i18n="suites_sub"
+          >
+            Generous private sanctuaries styled in warm organic textures,
+            expansive verandas, and panoramic sea vistas.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Suite 1 -->
+          <article class="suite-card">
+            <div class="suite-card-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80"
+                alt="Deluxe Sea View Suite"
+              />
+              <div class="suite-price-badge">
+                <small data-i18n="from_label">From</small>€ 310
+              </div>
+              <span class="suite-badge" data-i18n="badge_signature"
+                >Signature Suite</span
+              >
+            </div>
+            <div class="suite-card-body">
+              <div class="suite-meta" data-i18n="s1_meta">
+                48 m² · King Bed · Sea View
+              </div>
+              <h3 class="suite-name" data-i18n="suite_deluxe">
+                Deluxe Sea View Suite
+              </h3>
+              <p class="suite-desc" data-i18n="s1_desc">
+                Floor-to-ceiling glass doors opening to the ocean breeze. Fitted
+                with natural oak cabinetry, linen draping, and an expansive
+                sunset lounge.
+              </p>
+              <div class="suite-price">
+                <span class="from" data-i18n="from_label">From</span>
+                <span class="amount">€ 310</span>
+                <span class="night" data-i18n="per_night">per night</span>
+              </div>
+              <div class="suite-actions">
+                <button
+                  class="btn btn-primary"
+                  onclick="openBookingModal('Deluxe Sea View Suite')"
+                >
+                  <span data-i18n="btn_book_room">Book This Room</span>
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="
+                    openSuiteDetails(
+                      'Deluxe Sea View Suite',
+                      '48 m²',
+                      'King Size Bed & Balcony',
+                      'High-speed Fiber, Marble Rainfall Shower, In-room Bar, 24/7 Concierge, Sea-view Terrace, Linen Robes',
+                    )
+                  "
+                >
+                  <span data-i18n="btn_details">Details</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Suite 2 -->
+          <article class="suite-card">
+            <div class="suite-card-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80"
+                alt="Panoramic Executive Haven"
+              />
+              <div class="suite-price-badge">
+                <small data-i18n="from_label">From</small>€ 490
+              </div>
+              <span class="suite-badge" data-i18n="badge_executive"
+                >Executive</span
+              >
+            </div>
+            <div class="suite-card-body">
+              <div class="suite-meta" data-i18n="s2_meta">
+                72 m² · King Bed · Panoramic
+              </div>
+              <h3 class="suite-name" data-i18n="suite_exec">
+                Panoramic Executive Haven
+              </h3>
+              <p class="suite-desc" data-i18n="s2_desc">
+                A generous living area with wrap-around views, hand-woven
+                Georgian textile accents, and a private plunge terrace above the
+                sea.
+              </p>
+              <div class="suite-price">
+                <span class="from" data-i18n="from_label">From</span>
+                <span class="amount">€ 490</span>
+                <span class="night" data-i18n="per_night">per night</span>
+              </div>
+              <div class="suite-actions">
+                <button
+                  class="btn btn-primary"
+                  onclick="openBookingModal('Panoramic Executive Haven')"
+                >
+                  <span data-i18n="btn_book_room">Book This Room</span>
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="
+                    openSuiteDetails(
+                      'Panoramic Executive Haven',
+                      '72 m²',
+                      'King Bed & Plunge Terrace',
+                      'Panoramic Glazing, Espresso Machine, Butler Service, Deep-soak Tub, Walk-in Wardrobe, Private Terrace',
+                    )
+                  "
+                >
+                  <span data-i18n="btn_details">Details</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Suite 3 -->
+          <article class="suite-card">
+            <div class="suite-card-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800&q=80"
+                alt="Garden Terrace Residence"
+              />
+              <div class="suite-price-badge">
+                <small data-i18n="from_label">From</small>€ 365
+              </div>
+              <span class="suite-badge" data-i18n="badge_garden">Garden</span>
+            </div>
+            <div class="suite-card-body">
+              <div class="suite-meta" data-i18n="s3_meta">
+                58 m² · King Bed · Garden
+              </div>
+              <h3 class="suite-name" data-i18n="suite_garden">
+                Garden Terrace Residence
+              </h3>
+              <p class="suite-desc" data-i18n="s3_desc">
+                Set amid subtropical gardens with a private stone terrace,
+                outdoor daybed, and direct garden access — serene and utterly
+                secluded.
+              </p>
+              <div class="suite-price">
+                <span class="from" data-i18n="from_label">From</span>
+                <span class="amount">€ 365</span>
+                <span class="night" data-i18n="per_night">per night</span>
+              </div>
+              <div class="suite-actions">
+                <button
+                  class="btn btn-primary"
+                  onclick="openBookingModal('Garden Terrace Residence')"
+                >
+                  <span data-i18n="btn_book_room">Book This Room</span>
+                </button>
+                <button
+                  class="btn btn-outline btn-sm"
+                  onclick="
+                    openSuiteDetails(
+                      'Garden Terrace Residence',
+                      '58 m²',
+                      'King Bed & Garden Access',
+                      'Private Stone Terrace, Outdoor Daybed, Botanical Garden Access, Rainfall Shower, Mini Library',
+                    )
+                  "
+                >
+                  <span data-i18n="btn_details">Details</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem">
+          <a href="suites.html" class="btn btn-outline">
+            <span data-i18n="btn_view_all"
+              >View All Suites &amp; Residences</span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== FACILITIES ====================== -->
+    <section class="section reveal" id="facilities">
+      <div class="container">
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 5fr 7fr;
+            gap: 4rem;
+            align-items: center;
+          "
+        >
+          <div>
+            <div class="accent-line">
+              <span class="accent-label" data-i18n="fac_accent"
+                >Wellness &amp; Leisure</span
+              >
+            </div>
+            <h2 class="h1" style="margin-bottom: 1.25rem" data-i18n="fac_h1">
+              Amenities Conceived for the Discerning
+            </h2>
+            <p
+              style="
+                color: var(--color-taupe);
+                line-height: 1.7;
+                margin-bottom: 2rem;
+              "
+              data-i18n="fac_p"
+            >
+              Every facility at Gonio Batumi has been conceived as an extension
+              of the suite — a continuation of the calm, restorative atmosphere
+              that defines our coastal sanctuary.
+            </p>
+            <ul class="pillar-list">
+              <li>
+                <div class="pillar-icon">
+                  <span class="material-symbols-outlined">pool</span>
+                </div>
+                <div>
+                  <div class="pillar-title" data-i18n="fac_pool">
+                    Infinity Sea Pool
+                  </div>
+                  <div class="pillar-body" data-i18n="fac_pool_b">
+                    Cascading infinity edge with direct Black Sea panorama.
+                    Heated season-round.
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pillar-icon">
+                  <span class="material-symbols-outlined">spa</span>
+                </div>
+                <div>
+                  <div class="pillar-title" data-i18n="fac_spa">
+                    Riviera Wellness Spa
+                  </div>
+                  <div class="pillar-body" data-i18n="fac_spa_b">
+                    Georgian mineral baths, hammam rituals, and bespoke
+                    aromatherapy treatments.
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pillar-icon">
+                  <span class="material-symbols-outlined">restaurant</span>
+                </div>
+                <div>
+                  <div class="pillar-title" data-i18n="fac_dining">
+                    Coastal Dining Terrace
+                  </div>
+                  <div class="pillar-body" data-i18n="fac_dining_b">
+                    Open-air table service with Adjarian wine pairings and
+                    freshly caught Black Sea seafood.
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pillar-icon">
+                  <span class="material-symbols-outlined">fitness_center</span>
+                </div>
+                <div>
+                  <div class="pillar-title" data-i18n="fac_gym">
+                    Movement &amp; Training Studio
+                  </div>
+                  <div class="pillar-body" data-i18n="fac_gym_b">
+                    Floor-to-ceiling glazing, Technogym equipment, and in-room
+                    yoga programming on request.
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows: auto auto;
+              gap: 1rem;
+            "
+          >
+            <div style="overflow: hidden; aspect-ratio: 4/5; grid-row: span 2">
+              <img
+                src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80"
+                alt="Infinity pool"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </div>
+            <div style="overflow: hidden; aspect-ratio: 4/3">
+              <img
+                src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80"
+                alt="Spa"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </div>
+            <div style="overflow: hidden; aspect-ratio: 4/3">
+              <img
+                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"
+                alt="Dining"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== GALLERY ====================== -->
+    <section
+      class="section-sm reveal"
+      id="gallery"
+      style="background: rgba(23, 23, 23, 0.02)"
+    >
+      <div class="container" style="margin-bottom: 2rem">
+        <div class="accent-line">
+          <span class="accent-label" data-i18n="gal_accent"
+            >Architectural Gallery</span
+          >
+        </div>
+        <h2 class="h1" data-i18n="gal_h1">Through Glass &amp; Light</h2>
+      </div>
+      <div class="container">
+        <div class="gallery-grid">
+          <div class="gallery-cell g-span-7 g-tall">
+            <img
+              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1000&q=80"
+              alt="Hotel exterior"
+            />
+          </div>
+          <div class="gallery-cell g-span-5" style="aspect-ratio: 5/4">
+            <img
+              src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&q=80"
+              alt="Suite interior"
+            />
+          </div>
+          <div class="gallery-cell g-span-5" style="aspect-ratio: 5/4">
+            <img
+              src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800&q=80"
+              alt="Bathroom details"
+            />
+          </div>
+          <div class="gallery-cell g-span-4" style="aspect-ratio: 1">
+            <img
+              src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=600&q=80"
+              alt="Pool dusk"
+            />
+          </div>
+          <div class="gallery-cell g-span-8" style="aspect-ratio: 16/7">
+            <img
+              src="https://images.unsplash.com/photo-1455587734955-081b22074882?w=1200&q=80"
+              alt="Coastal landscape"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== LOCATION ====================== -->
+    <section class="section reveal" id="location">
+      <div class="container">
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 5fr 7fr;
+            gap: 4rem;
+            align-items: start;
+          "
+        >
+          <div>
+            <div class="accent-line">
+              <span class="accent-label" data-i18n="loc_accent"
+                >Riviera Location</span
+              >
+            </div>
+            <h2 class="h1" style="margin-bottom: 1.25rem" data-i18n="loc_h1">
+              Where History Meets the Sea — Gonio, Batumi
+            </h2>
+            <p
+              style="
+                color: var(--color-taupe);
+                line-height: 1.7;
+                margin-bottom: 2rem;
+              "
+              data-i18n="loc_p"
+            >
+              Situated just south of central Batumi, Gonio has celebrated its
+              pristine marine microclimate since Roman antiquity. The historic
+              Gonio-Apsaros Fortress stands minutes away, while our seaside
+              boulevard offers quiet morning strolls away from downtown
+              commotion.
+            </p>
+            <ul class="distance-list">
+              <li>
+                <span class="distance-label" data-i18n="loc_airport"
+                  >Batumi International Airport (BUS)</span
+                >
+                <span class="distance-val" data-i18n="loc_d_airport"
+                  >12 km · 15 min</span
+                >
+              </li>
+              <li>
+                <span class="distance-label" data-i18n="loc_fortress"
+                  >Historic Gonio Fortress</span
+                >
+                <span class="distance-val" data-i18n="loc_d_fortress"
+                  >1.5 km · 3 min</span
+                >
+              </li>
+              <li>
+                <span class="distance-label" data-i18n="loc_boulevard"
+                  >Batumi Boulevard &amp; Old Town</span
+                >
+                <span class="distance-val" data-i18n="loc_d_boulevard"
+                  >14 km · 20 min</span
+                >
+              </li>
+              <li>
+                <span class="distance-label" data-i18n="loc_sarpi"
+                  >Sarpi Border &amp; Coastal Cliffs</span
+                >
+                <span class="distance-val" data-i18n="loc_d_sarpi"
+                  >6 km · 8 min</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border: 1px solid var(--color-ink-border);
+            "
+          >
+            <iframe
+              title="Gonio Batumi location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.211116702295!2d41.59751249130393!3d41.629567906869774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40678564600925ff%3A0x1c5eafe6b2c15538!2sLegend%20Business%20Hotel%20Batumi!5e0!3m2!1sen!2sge!4v1794239514546!5m2!1sen!2sge"
+              width="100%"
+              height="420"
+              style="border: 0; display: block"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div
+              style="
+                position: absolute;
+                bottom: 1.5rem;
+                left: 1.5rem;
+                background: rgba(244, 241, 234, 0.97);
+                backdrop-filter: blur(8px);
+                padding: 1.25rem;
+                max-width: 280px;
+                border: var(--border-gold);
+              "
+            >
+              <div style="display: flex; align-items: flex-start; gap: 0.75rem">
+                <span class="material-symbols-outlined text-gold"
+                  >location_on</span
+                >
+                <div>
+                  <div
+                    style="
+                      font-weight: 500;
+                      font-size: var(--text-sm);
+                      margin-bottom: 0.25rem;
+                    "
+                    data-i18n="loc_hotel_name"
+                  >
+                    Gonio Batumi Hotel
+                  </div>
+                  <div
+                    style="
+                      font-size: var(--text-xs);
+                      color: var(--color-taupe);
+                      line-height: 1.5;
+                    "
+                    data-i18n="loc_address"
+                  >
+                    Gonio Seaside Promenade, Autonomous Republic of Adjara,
+                    Georgia
+                  </div>
+                  <div class="micro text-gold" style="margin-top: 0.5rem">
+                    41.5647° N, 41.5721° E
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== CONTACT / CTA ====================== -->
+    <section
+      class="section reveal"
+      id="contact"
+      style="background: var(--color-charcoal); color: #fff"
+    >
+      <div class="container" style="text-align: center; max-width: 700px">
+        <div class="accent-line" style="justify-content: center">
+          <span class="accent-label" data-i18n="cta_accent"
+            >Begin Your Stay</span
+          >
+        </div>
+        <h2
+          class="h1"
+          style="color: #fff; margin-bottom: 1.25rem"
+          data-i18n="cta_h1"
+        >
+          Reserve Your Corner of the Black Sea
+        </h2>
+        <p
+          class="subhead"
+          style="color: rgba(255, 255, 255, 0.65); margin-bottom: 2.5rem"
+          data-i18n="cta_p"
+        >
+          Our reservation team is available around the clock to craft a bespoke
+          itinerary that matches your vision of the perfect coastal retreat.
+        </p>
+        <div
+          style="
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <button class="btn btn-gold btn-lg" onclick="openBookingModal('')">
+            <span data-i18n="cta_reserve">Make a Reservation</span>
+          </button>
+          <a href="mailto:hotelgoniobatumi@gmail.com" class="btn btn-ghost">
+            <span class="material-symbols-outlined" style="font-size: 0.9rem"
+              >mail</span
+            >
+            hotelgoniobatumi@gmail.com
+          </a>
+        </div>
+        <p
+          style="
+            margin-top: 2rem;
+            font-size: var(--text-micro);
+            letter-spacing: 0.15em;
+            color: rgba(255, 255, 255, 0.4);
+          "
+        >
+          +995 577 92 93 21
+        </p>
+      </div>
+    </section>
+
+    <!-- ====================== FOOTER ====================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand-name" data-i18n="logo_name">
+              GONIO BATUMI HOTEL
+            </div>
+            <p
+              style="
+                font-size: var(--text-sm);
+                color: rgba(255, 255, 255, 0.45);
+                max-width: 320px;
+                line-height: 1.75;
+              "
+              data-i18n="footer_desc"
+            >
+              An architectural haven perched along the Black Sea coastline.
+              Curated hospitality, serene maritime living, and discrete luxury
+              in Batumi, Georgia.
+            </p>
+            <div class="footer-social">
+              <a href="#" data-i18n="footer_instagram">Instagram</a>
+              <a href="#" data-i18n="footer_facebook">Facebook</a>
+              <a href="#" data-i18n="footer_linkedin">LinkedIn</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-section-label" data-i18n="footer_nav">
+              Navigation
+            </div>
+            <ul class="footer-nav">
+              <li>
+                <a href="suites.html" data-i18n="nav_link_suites"
+                  >Accommodations &amp; Suites</a
+                >
+              </li>
+              <li>
+                <a href="#facilities" data-i18n="nav_link_fac"
+                  >Wellness &amp; Pool Facilities</a
+                >
+              </li>
+              <li>
+                <a href="#gallery" data-i18n="nav_link_gal"
+                  >Architectural Gallery</a
+                >
+              </li>
+              <li>
+                <a href="#location" data-i18n="nav_link_loc"
+                  >Black Sea Riviera Location</a
+                >
+              </li>
+              <li>
+                <a href="#why-choose-hotel" data-i18n="nav_link_about"
+                  >The Heritage &amp; Story</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-section-label" data-i18n="footer_contact">
+              Concierge &amp; Inquiries
+            </div>
+            <div class="footer-contact-row">
+              <span class="material-symbols-outlined">location_on</span>
+              <span data-i18n="loc_address"
+                >Gonio Seaside Promenade, Batumi, Autonomous Republic of Adjara,
+                Georgia</span
+              >
+            </div>
+            <div class="footer-contact-row">
+              <span class="material-symbols-outlined">call</span>
+              <span>+995 577 92 93 21</span>
+            </div>
+            <div class="footer-contact-row">
+              <span class="material-symbols-outlined">mail</span>
+              <span>hotelgoniobatumi@gmail.com</span>
+            </div>
+            <button
+              class="btn btn-outline-gold btn-sm"
+              style="margin-top: 1.25rem"
+              onclick="openBookingModal('')"
+            >
+              <span data-i18n="cta_reserve">Make a Reservation</span>
+            </button>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            © <span data-year>2025</span>
+            <span data-i18n="footer_rights"
+              >Gonio Batumi Hotel &amp; Residences. All rights reserved.</span
+            >
+          </p>
+          <div class="footer-legal">
+            <a href="#" data-i18n="footer_privacy">Privacy Policy</a>
+            <a href="#" data-i18n="footer_terms">Terms of Stay</a>
+            <a href="#" data-i18n="footer_imprint">Imprint</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ====================== FAB ====================== -->
+    <div class="fab">
+      <a
+        href="https://wa.me/995577929321"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-primary"
+        style="gap: 0.6rem"
+      >
+        <span class="material-symbols-outlined" style="font-size: 1rem"
+          >chat</span
+        >
+        <span data-i18n="fab_label">Concierge</span>
+      </a>
+    </div>
+
+    <!-- ====================== BOOKING MODAL ====================== -->
+    <div
+      class="modal-overlay"
+      id="bookingModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="bookingModalTitle"
+      style="display: none"
+    >
+      <div class="modal-box">
+        <button
+          class="modal-close"
+          onclick="closeBookingModal()"
+          aria-label="Close"
+        >
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <div style="margin-bottom: 1.5rem">
+          <div
+            class="micro text-gold"
+            style="margin-bottom: 0.5rem"
+            data-i18n="modal_eyebrow"
+          >
+            Gonio Batumi Reservation
+          </div>
+          <h3
+            class="h2"
+            id="bookingModalTitle"
+            style="margin: 0 0 0.5rem"
+            data-i18n="modal_title"
+          >
+            Request Your Stay
+          </h3>
+          <p
+            style="font-size: var(--text-sm); color: var(--color-taupe)"
+            data-i18n="modal_subtitle"
+          >
+            Our reservation administrator will review availability and contact
+            you personally to finalize your booking.
+          </p>
+        </div>
+        <form id="reservationForm" onsubmit="submitReservationForm(event)">
+          <div class="grid-2" style="margin-bottom: 1rem">
+            <div class="form-group">
+              <label class="form-label"
+                ><span data-i18n="field_name">Guest Full Name</span> *</label
+              >
+              <input
+                class="form-input"
+                id="res-name"
+                type="text"
+                placeholder="Alexander Smith"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label"
+                ><span data-i18n="field_phone">Contact Phone</span> *</label
+              >
+              <input
+                class="form-input"
+                id="res-phone"
+                type="tel"
+                autocomplete="tel"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group" style="margin-bottom: 1rem">
+            <label class="form-label"
+              ><span data-i18n="field_email">Email Address</span> *</label
+            >
+            <input
+              class="form-input"
+              id="res-email"
+              type="email"
+              placeholder="guest@domain.com"
+              required
+            />
+          </div>
+          <div class="grid-2" style="margin-bottom: 1rem">
+            <div class="form-group">
+              <label class="form-label"
+                ><span data-i18n="field_checkin">Check-In Date</span> *</label
+              >
+              <input class="form-input" id="res-checkin" type="date" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label"
+                ><span data-i18n="field_checkout">Check-Out Date</span> *</label
+              >
+              <input
+                class="form-input"
+                id="res-checkout"
+                type="date"
+                required
+              />
+            </div>
+          </div>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr 2fr;
+              gap: 1rem;
+              margin-bottom: 1rem;
+            "
+          >
+            <div class="form-group">
+              <label class="form-label"
+                ><span data-i18n="field_adults">Adults</span> *</label
+              >
+              <select
+                class="form-select"
+                id="res-adults"
+                data-i18n-opts="adults_1,adults_2,adults_3,adults_4"
+              >
+                <option value="1" data-i18n="adults_1">1 Adult</option>
+                <option value="2" selected data-i18n="adults_2">
+                  2 Adults
+                </option>
+                <option value="3" data-i18n="adults_3">3 Adults</option>
+                <option value="4" data-i18n="adults_4">4 Adults</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label"
+                ><span data-i18n="field_children">Children</span></label
+              >
+              <select
+                class="form-select"
+                id="res-children"
+                data-i18n-opts="children_0,children_1,children_2"
+              >
+                <option value="0" selected data-i18n="children_0">
+                  0 Children
+                </option>
+                <option value="1" data-i18n="children_1">1 Child</option>
+                <option value="2" data-i18n="children_2">2 Children</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label"
+                ><span data-i18n="field_room">Suite Category</span> *</label
+              >
+              <select
+                class="form-select"
+                id="res-roomtype"
+                data-i18n-opts="suite_deluxe,suite_exec,suite_garden,suite_penthouse"
+              >
+                <option value="Deluxe Sea View Suite" data-i18n="suite_deluxe">
+                  Deluxe Sea View
+                </option>
+                <option
+                  value="Panoramic Executive Haven"
+                  data-i18n="suite_exec"
+                >
+                  Executive Haven
+                </option>
+                <option
+                  value="Garden Terrace Residence"
+                  data-i18n="suite_garden"
+                >
+                  Garden Residence
+                </option>
+                <option
+                  value="Penthouse Maritime Grand Suite"
+                  data-i18n="suite_penthouse"
+                >
+                  Penthouse Maritime
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group" style="margin-bottom: 1.5rem">
+            <label class="form-label"
+              ><span data-i18n="field_notes"
+                >Special Inquiries or Arrival Notes</span
+              ></label
+            >
+            <textarea
+              class="form-textarea"
+              id="res-notes"
+              rows="3"
+              data-i18n-ph="notes_ph"
+              placeholder="Airport transfer, dietary requests, floor preference..."
+            ></textarea>
+          </div>
+          <div class="form-error" id="formErrorMessage"></div>
+          <button
+            class="btn btn-primary"
+            type="submit"
+            style="width: 100%; justify-content: center; margin-top: 0.5rem"
+          >
+            <span data-i18n="btn_submit">Submit Reservation Request</span>
+            <span class="material-symbols-outlined" style="font-size: 0.9rem"
+              >send</span
+            >
+          </button>
+        </form>
+        <div class="spinner" id="reservationLoading">
+          <div class="spinner-ring"></div>
+          <span class="micro text-taupe" data-i18n="loading_msg"
+            >Submitting to Concierge Desk…</span
+          >
+        </div>
+        <div class="form-success" id="reservationSuccess">
+          <div class="success-icon">
+            <span class="material-symbols-outlined">done_all</span>
+          </div>
+          <div class="micro text-gold" data-i18n="success_badge">
+            Inquiry Received
+          </div>
+          <h3 class="h3" style="margin: 0" data-i18n="success_title">
+            Your request is with our team
+          </h3>
+          <p
+            style="
+              font-size: var(--text-sm);
+              color: var(--color-taupe);
+              max-width: 380px;
+            "
+            data-i18n="success_p"
+          >
+            Our concierge will reach out within 2 hours to confirm availability
+            and finalize the details of your stay.
+          </p>
+          <button class="btn btn-outline btn-sm" onclick="closeBookingModal()">
+            <span data-i18n="btn_close">Close</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================== SUITE DETAILS MODAL ====================== -->
+    <div
+      class="modal-overlay"
+      id="suiteDetailsModal"
+      role="dialog"
+      aria-modal="true"
+      style="display: none"
+    >
+      <div class="modal-box" style="max-width: 520px">
+        <button
+          class="modal-close"
+          onclick="closeSuiteDetails()"
+          aria-label="Close"
+        >
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <div
+          class="micro text-gold"
+          style="margin-bottom: 0.5rem"
+          data-i18n="det_badge"
+        >
+          Suite Specification
+        </div>
+        <h3 class="h2" id="modalSuiteTitle" style="margin: 0 0 1.5rem"></h3>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+          "
+        >
+          <div
+            style="padding: 0.75rem 1rem; background: rgba(23, 23, 23, 0.04)"
+          >
+            <div
+              style="
+                font-size: var(--text-xs);
+                color: var(--color-taupe);
+                margin-bottom: 0.2rem;
+              "
+              data-i18n="det_area_label"
+            >
+              Floor Plan
+            </div>
+            <div
+              id="modalSuiteArea"
+              style="font-weight: 500; font-size: var(--text-sm)"
+            ></div>
+          </div>
+          <div
+            style="padding: 0.75rem 1rem; background: rgba(23, 23, 23, 0.04)"
+          >
+            <div
+              style="
+                font-size: var(--text-xs);
+                color: var(--color-taupe);
+                margin-bottom: 0.2rem;
+              "
+              data-i18n="det_bed_label"
+            >
+              Bedding
+            </div>
+            <div
+              id="modalSuiteBed"
+              style="font-weight: 500; font-size: var(--text-sm)"
+            ></div>
+          </div>
+        </div>
+        <div
+          class="micro text-taupe"
+          style="margin-bottom: 0.75rem"
+          data-i18n="det_amenities"
+        >
+          Included Amenities
+        </div>
+        <div
+          class="amenities-grid"
+          id="modalSuiteAmenities"
+          style="margin-bottom: 2rem"
+        ></div>
+        <button
+          class="btn btn-primary"
+          onclick="proceedFromDetails()"
+          style="width: 100%; justify-content: center"
+        >
+          <span data-i18n="det_proceed">Proceed to Reservation</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="main.js"></script>
+    <script src="animations.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@29.5.0/dist/js/intlTelInput.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var phoneInput = document.getElementById("res-phone");
+        if (phoneInput && window.intlTelInput) {
+          window.intlTelInput(phoneInput, {
+            initialCountry: "ge",
+            countryOrder: [
+              "ge",
+              "ru",
+              "us",
+              "gb",
+              "de",
+              "tr",
+              "ua",
+              "am",
+              "az",
+            ],
+            loadUtils: function () {
+              return import("https://cdn.jsdelivr.net/npm/intl-tel-input@29.5.0/dist/js/utils.js");
+            },
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
